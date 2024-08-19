@@ -222,14 +222,14 @@
     @apply bg-white border-0 rounded-md text-left overflow-hidden w-max min-w-full;
   }
   .th-table thead th {
-    @apply bg-[#f5f7fc] py-6 px-5 text-base font-medium whitespace-nowrap;
+    @apply bg-[#f5f7fc] py-6 px-4 text-base font-medium whitespace-nowrap;
     color: var(--primary-color);
   }
   .th-table tbody tr {
     @apply border-b border-solid border-b-[#ecedf2];
   }
   .th-table tbody tr td {
-    @apply py-4 px-5 text-sm font-normal text-[#6b6b6b] leading-6;
+    @apply py-4 px-4 text-sm font-normal text-[#6b6b6b] leading-6;
   }
 
   .th-table-img img {

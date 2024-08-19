@@ -197,7 +197,7 @@ const JobList = () => {
     },
     {
       name: "No. of applications",
-      width: "130px",
+      width: "100px",
       center: true,
       selector: (row) => (
         <>
@@ -218,7 +218,7 @@ const JobList = () => {
     },
     {
       name: "Featured",
-      width: "130px",
+      width: "100px",
       center: true,
       selector: (row) => (
         <Tippy
@@ -239,7 +239,7 @@ const JobList = () => {
     },
     {
       name: "Status",
-      width: "130px",
+      width: "100px",
       center: true,
       selector: (row) => (
         <Tippy
