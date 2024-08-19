@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// export const baseURL = process.env.REACT_APP_URL;
-export const baseURL = "http://localhost:8009";
+export const baseURL = process.env.REACT_APP_URL;
+// export const baseURL = "http://localhost:8009";
 
 // Reusable function to handle API requests
 export const apiRequest = async (url, data, thunkAPI) => {
