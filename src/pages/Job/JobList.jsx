@@ -157,6 +157,9 @@ const JobList = () => {
                       ? row?.ComLogo
                       : "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/company-logo-design-template-e089327a5c476ce5c70c74f7359c5898_screen.jpg?ts=1672291305"
                   }
+                  onError={(e) =>
+                    (e.target.src = "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/company-logo-design-template-e089327a5c476ce5c70c74f7359c5898_screen.jpg?ts=1672291305")
+                  }
                   alt={row.ComName}
                 />
               </span>

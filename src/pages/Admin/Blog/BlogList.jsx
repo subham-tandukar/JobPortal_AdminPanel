@@ -25,6 +25,7 @@ import PageHeading from "../../../components/PageHeading";
 import Error from "../../../components/Error";
 import DataTable from "../../../components/DataTable";
 import { categoryList } from "../../../redux/Category/categoryApi";
+import fallbackImg from "../../../img/blog.jpg";
 
 const BlogList = () => {
   const dispatch = useDispatch();
@@ -141,7 +142,12 @@ const BlogList = () => {
           <div className="inner-box">
             <div className="content">
               <span className="company-logo">
-                <img loading="lazy" src={row?.Image} alt={row.Title} />
+                <img
+                  loading="lazy"
+                  src={row?.Image}
+                  alt={row.Title}
+                  onError={(e) => (e.target.src = fallbackImg)}
+                />
               </span>
               <h4 className="!mb-0">
                 <Link href="/">{row.Title}</Link>
